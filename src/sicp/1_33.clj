@@ -16,11 +16,6 @@
 (defn sum-of-squares-of-primes [a b]
   (filtered-accumulate prime? + 0 square a inc b))
 
-(defn gcd [a b]
-  (if (= b 0)
-    a
-    (gcd b (rem a b))))
-
 (defn relatively-prime? [a b]
   (= (gcd a b) 1))
 

@@ -18,3 +18,11 @@
 
 (defn dubble [x]
   (+ x x))
+
+(defn log-base [base n]
+  (/ (Math/log n) (Math/log base)))
+
+(defn gcd [a b]
+  (if (= b 0)
+    a
+    (gcd b (rem a b))))

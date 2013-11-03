@@ -34,3 +34,12 @@
        (dubble 0) => 0
        (dubble 25) => 50
        )
+
+(facts "log-base 2"
+       (log-base 2 16) => 4.0
+       (log-base 2 128) => 7.0
+       )
+
+(facts "log-base 3"
+       (log-base 3 27) => 3.0
+       )
