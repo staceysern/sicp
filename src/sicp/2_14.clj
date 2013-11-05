@@ -15,9 +15,11 @@
 (def a (make-center-percent 50 1))
 (def b (make-center-percent 25 1))
 
+a
+;;
+
 (div-interval a a)
 ;; (0.9801980198019802 1.0202020202020203)
-
 
 (div-interval a b)
 ;;(1.9603960396039604 2.0404040404040407)

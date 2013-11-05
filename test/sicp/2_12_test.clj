@@ -1,4 +1,4 @@
-(ns sicp.2_12-test
+(ns sicp.2-12-test
   (:require [midje.sweet :refer :all]
             [sicp.2-12 :refer :all]))
 
