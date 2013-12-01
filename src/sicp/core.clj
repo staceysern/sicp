@@ -26,3 +26,11 @@
   (if (= b 0)
     a
     (gcd b (rem a b))))
+
+(defn append
+  ;; Append two sequences into a list
+  [seq1 seq2]
+  (if-not (seq seq1)
+    (sequence seq2)
+    (cons (first seq1) (append (rest seq1) seq2))))
+
