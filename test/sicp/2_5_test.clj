@@ -1,4 +1,5 @@
 (ns sicp.2-5-test
+  (:refer-clojure :exclude [cons])
   (:require [midje.sweet :refer :all]
             [sicp.2-5 :refer :all]
             [clojure.contrib.math :refer :all]))
@@ -9,11 +10,11 @@
        )
 
 (facts "car"
-       (car (sicp-cons 10 5)) => 10
+       (car (cons 10 5)) => 10
        )
 
 (facts "cdr"
-       (cdr (sicp-cons 10 5)) => 5
+       (cdr (cons 10 5)) => 5
        )
 
 

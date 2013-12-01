@@ -2,8 +2,7 @@
   (:use sicp.1-43)
   (:use sicp.fixedpoint)
   (:use sicp.core)
-  (:use [clojure.contrib.generic.math-functions])
-  )
+  (:use [clojure.contrib.generic.math-functions]))
 
 (defn nth-root [n x]
   (let [transformation (fn [y] (/ x (pow y (- n 1))))

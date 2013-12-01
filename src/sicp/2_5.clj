@@ -1,7 +1,8 @@
 (ns sicp.2-5
+  (:refer-clojure :exclude [cons])
   (:use [clojure.contrib.math]))
 
-(defn sicp-cons [a b]
+(defn cons [a b]
   (* (expt 2 a) (expt 3 b)))
 
 (defn num-divides [n d]
