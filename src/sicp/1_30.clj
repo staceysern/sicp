@@ -1,5 +1,4 @@
-(ns sicp.1-30
-  (:use sicp.core))
+(ns sicp.1-30)
 
 (defn sum-iter [term a next b]
   (let [iter (fn [a result]
@@ -7,4 +6,3 @@
                  result
                  (recur (next a) (+ (term a) result))))]
     (iter a 0)))
-

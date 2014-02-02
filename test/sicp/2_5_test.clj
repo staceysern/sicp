@@ -2,7 +2,7 @@
   (:refer-clojure :exclude [cons])
   (:require [midje.sweet :refer :all]
             [sicp.2-5 :refer :all]
-            [clojure.contrib.math :refer :all]))
+            [clojure.math.numeric-tower :refer [expt]]))
 
 (facts "num-divides"
        (num-divides (expt 2 4) 2) => 4
@@ -16,7 +16,3 @@
 (facts "cdr"
        (cdr (cons 10 5)) => 5
        )
-
-
-
-

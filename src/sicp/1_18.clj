@@ -1,5 +1,5 @@
 (ns sicp.1-18
-  (:use sicp.core))
+  (:require [sicp.core :refer [dubble halve]]))
 
 (defn fast-mult-iter [a b]
   (letfn [(iter [a b acc]
@@ -7,4 +7,3 @@
                   (even? b) (recur (dubble a) (halve b) acc)
                   :else (recur a (dec b) (+ acc a))))]
     (iter a b 0)))
-

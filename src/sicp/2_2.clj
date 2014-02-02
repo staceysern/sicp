@@ -1,5 +1,5 @@
 (ns sicp.2-2
-  (:use sicp.core))
+  (:require [sicp.core :refer [average]]))
 
 (defn make-segment [start end]
   (list start end))

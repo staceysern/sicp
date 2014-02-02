@@ -1,5 +1,5 @@
 (ns sicp.1-16
-  (:use sicp.core))
+  (:require [sicp.core :refer [square]]))
 
 (defn fast-expt-iter [b n]
   (letfn [(iter [b n a]

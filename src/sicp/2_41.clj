@@ -1,7 +1,7 @@
 (ns sicp.2-41
-  (:use sicp.fold)
-  (:use sicp.accumulate)
-  (:use sicp.2-40))
+  (:require [sicp.fold :refer [flatmap]]
+            [sicp.accumulate :refer [accumulate]]
+            [sicp.2-40 :refer [unique-pairs]]))
 
 (defn unique-triples [n]
   (flatmap (fn [[i j]]

@@ -1,5 +1,4 @@
-(ns sicp.1-36
-  (:use [clojure.contrib.generic.math-functions]))
+(ns sicp.1-36)
 
 (def tolerance 0.00001)
 
@@ -69,4 +68,3 @@
 ;; 4.5555465521473675
 ;; 4.555537551999825
 ;; 4.555537551999825
-

@@ -1,6 +1,6 @@
 (ns sicp.2-10
-  (:use sicp.interval)
-  (:use sicp.2-7))
+  (:require [sicp.interval :refer [make-interval mul-interval]]
+            [sicp.2-7 :refer [lower-bound upper-bound]]))
 
 (defn spans-zero? [x]
   (and (<= (lower-bound x) 0)

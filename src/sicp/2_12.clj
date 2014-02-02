@@ -1,6 +1,6 @@
 (ns sicp.2-12
-  (:use sicp.interval)
-  (:use sicp.2-7))
+  (:require [sicp.interval :refer [make-interval]]
+            [sicp.2-7 :refer [lower-bound upper-bound]]))
 
 (defn make-center-width [c w]
   (make-interval (- c w) (+ c w)))

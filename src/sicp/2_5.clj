@@ -1,6 +1,6 @@
 (ns sicp.2-5
   (:refer-clojure :exclude [cons])
-  (:use [clojure.contrib.math]))
+  (:require [clojure.math.numeric-tower :refer [expt]]))
 
 (defn cons [a b]
   (* (expt 2 a) (expt 3 b)))

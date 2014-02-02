@@ -1,5 +1,5 @@
 (ns sicp.1-29
-  (:use sicp.core))
+  (:require [sicp.core :refer [cube]]))
 
 (defn sum [term a next b]
   (if (> a b)
@@ -16,16 +16,10 @@
         simpson-term (fn [k]
                        (* (coefficient k)
                           (f (+ a (* k h)))))]
-    (* (/ h 3) (sum simpson-term 0 inc n)))) 
+    (* (/ h 3) (sum simpson-term 0 inc n))))
 
 (simpson-integral cube 0 1 100)
 ;; 1/4
 
 (simpson-integral cube 0 1 1000)
 ;; 1/4
-
-
-
-
-
-

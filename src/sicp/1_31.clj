@@ -1,5 +1,4 @@
-(ns sicp.1-31 
-  (:use sicp.core))
+(ns sicp.1-31)
 
 (defn product [term a next b]
   (if (> a b)
@@ -28,10 +27,3 @@
         pi-term (fn [n]
                   (/ (top n) (bottom n)))]
     (* 4.0 (product-iter pi-term 0 inc 10000))))
-
-
-
-
-
-
-

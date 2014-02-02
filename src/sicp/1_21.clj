@@ -1,5 +1,5 @@
 (ns sicp.1-21
-  (use sicp.core))
+  (:require [sicp.core :refer [square divides?]]))
 
 (defn find-divisor [n test-divisor]
   (cond (> (square test-divisor) n) n

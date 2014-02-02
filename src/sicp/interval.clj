@@ -1,5 +1,5 @@
 (ns sicp.interval
-  (:use sicp.2-7))
+  (:require [sicp.2-7 :refer [lower-bound upper-bound]]))
 
 (defn make-interval [a b]
   (list a b))

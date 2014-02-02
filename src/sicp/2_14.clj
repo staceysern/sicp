@@ -1,6 +1,7 @@
 (ns sicp.2-14
-  (:use sicp.interval)
-  (:use sicp.2-12))
+  (:require [sicp.interval :refer [make-interval div-interval mul-interval
+                                   add-interval]]
+            [sicp.2-12 :refer [make-center-percent percent]]))
 
 (defn par1 [r1 r2]
   (div-interval (mul-interval r1 r2)
@@ -26,4 +27,3 @@
 
 (percent (par2 a b))
 ;; 1.0000000000000069
-

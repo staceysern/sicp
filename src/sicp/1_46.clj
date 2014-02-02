@@ -1,5 +1,5 @@
 (ns sicp.1-46
-  (:use sicp.core))
+  (:require [sicp.core :refer [square average]]))
 
 (defn iterative-improve [good-enough? improve]
   (fn [n]

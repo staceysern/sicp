@@ -1,5 +1,5 @@
 (ns sicp.2-32
-  (use sicp.core))
+  (:require [sicp.core :refer [append]]))
 
 (defn subsets [s]
   (if-not (seq s)

@@ -1,5 +1,5 @@
 (ns sicp.2-1
-  (:use sicp.core))
+  (:require [sicp.core :refer [gcd]]))
 
 (defn make-rat [n d]
   (let [g (gcd (Math/abs n) (Math/abs d))]

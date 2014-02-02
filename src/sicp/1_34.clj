@@ -1,5 +1,5 @@
 (ns sicp.1-34
-  (:use sicp.core))
+  (:require [sicp.core :refer [square]]))
 
 (defn f [g]
   (g 2))

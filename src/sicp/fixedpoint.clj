@@ -1,12 +1,12 @@
 (ns sicp.fixedpoint
-  (:use sicp.core))
+  (:require [sicp.core :refer [average]]))
 
 (def tolerance 0.00001)
 
 (defn fixed-point
   ([f first-guess]
      (fixed-point f first-guess false))
-  
+
   ([f first-guess verbose]
      (let [close-enough? (fn [v1 v2]
                            (< (Math/abs (- v1 v2)) tolerance))
@@ -22,4 +22,3 @@
 
 (defn average-damp [f]
   (fn [x] (average x (f x))))
-

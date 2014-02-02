@@ -1,6 +1,5 @@
 (ns sicp.1-22
-  (:use sicp.prime)
-  (:use criterium.core))
+  (:require [sicp.prime :refer [prime?]]))
 
 (defn search-for-primes [begin end num-to-find]
   (loop [n (if (odd? begin)
@@ -25,6 +24,3 @@
 
 (search-for-primes 1000000 1001000 3)
 ;; [1000003 1000033 1000037]
-
-
-

@@ -1,6 +1,6 @@
 (ns sicp.fold
-  (:use sicp.accumulate)
-  (:use sicp.core))
+  (:require [sicp.accumulate :refer [accumulate]]
+            [sicp.core :refer [append]]))
 
 (def fold-right accumulate)
 
@@ -14,5 +14,3 @@
 
 (defn flatmap [proc sequence]
   (accumulate append () (map proc sequence)))
-
-

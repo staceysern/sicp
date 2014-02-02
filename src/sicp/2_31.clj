@@ -1,5 +1,5 @@
 (ns sicp.2-31
-  (use sicp.core))
+  (:require [sicp.core :refer [square]]))
 
 (defn tree-map [f tree]
   (map (fn [sub-tree]
@@ -13,4 +13,3 @@
 
 (defn scale-tree [factor tree]
   (tree-map (partial * factor) tree))
-

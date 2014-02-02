@@ -1,5 +1,5 @@
 (ns sicp.1-44
-  (:use sicp.1-43))
+  (:require [sicp.1-43 :refer [repeated]]))
 
 (defn smooth [f]
   (let [dx 0.00001]

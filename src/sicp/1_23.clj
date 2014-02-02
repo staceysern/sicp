@@ -1,6 +1,5 @@
 (ns sicp.1-23
-  (:use sicp.core)
-  (:use sicp.bench))
+  (:require [sicp.core :refer [square divides?]]))
 
 (defn next-divisor [n]
   (if (= n 2)
@@ -17,7 +16,3 @@
 
 (defn smallest-divisor-next [n]
   (find-divisor n 2 next-divisor))
-
-
-
-

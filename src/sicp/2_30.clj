@@ -1,5 +1,5 @@
 (ns sicp.2-30
-  (use sicp.core))
+  (:require [sicp.core :refer [square]]))
 
 (defn square-tree [tree]
   (cond (not (sequential? tree)) (square tree)
@@ -13,4 +13,3 @@
            (square-tree-map sub-tree)
            (square sub-tree)))
        tree))
-

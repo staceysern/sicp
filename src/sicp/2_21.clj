@@ -1,5 +1,5 @@
 (ns sicp.2-21
-  (:use sicp.core))
+  (:require [sicp.core :refer [square]]))
 
 (defn square-list-r [items]
   (if (empty? items)

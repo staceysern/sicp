@@ -1,5 +1,4 @@
-(ns sicp.2-26
-  (:use sicp.core))
+(ns sicp.2-26)
 
 (def x '(1 2 3))
 (def y '(4 5 6))

@@ -1,6 +1,5 @@
 (ns sicp.1-24
-  (:use sicp.expmod)
-  (:use criterium.core))
+  (:require [sicp.expmod :refer [expmod]]))
 
 (defn fermat-test [n]
   (let [try-it (fn [a]
@@ -11,4 +10,3 @@
   (cond (= times 0) true
         (fermat-test n) (recur n (- times 1))
         :else false))
-

@@ -1,5 +1,5 @@
 (ns sicp.1-15
-  (:use sicp.core))
+  (:require [sicp.core :refer [cube]]))
 
 (defn p [x]
   (- (* 3 x)
@@ -14,4 +14,3 @@
 
 ;; a. 5
 ;; b. Space and time order of growth: theta(log base 3 angle)
-

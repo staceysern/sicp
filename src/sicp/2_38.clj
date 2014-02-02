@@ -1,5 +1,5 @@
 (ns sicp.2-38
-  (:use sicp.accumulate))
+  (:require [sicp.accumulate :refer [accumulate]]))
 
 (def fold-right accumulate)
 
@@ -18,7 +18,7 @@
 ;; 1/6
 
 ;; (fold-right list () '(1 2 3))
-;; (1 (2 (3 ()))) 
+;; (1 (2 (3 ())))
 
 ;; (fold-left list () '(1 2 3))
 ;; (((() 1) 2) 3)
@@ -26,4 +26,3 @@
 ;; commutative operation produces the same answer for fold-right and fold-left
 ;; (fold-right + 0 '(1 2 3))
 ;; (fold-right + 0 '(1 2 3))
-

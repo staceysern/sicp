@@ -1,6 +1,5 @@
 (ns sicp.1-7
-  (:use sicp.core)
-  (:use sicp.1-6))
+  (:require [sicp.1-6 :refer [sqrt improve]]))
 
 ;; good-enough? doesn't work well for small numbers because the
 ;; tolerance used is large in relation to the small number.  For large
@@ -21,4 +20,3 @@
 
 (sqrt 0.0025)
 ;; 0.05423762280896765
-

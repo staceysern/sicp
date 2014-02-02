@@ -1,5 +1,5 @@
 (ns sicp.1-35
-  (:use sicp.fixedpoint))
+  (:require [sicp.fixedpoint :refer [fixed-point]]))
 
 (defn golden-ratio []
   (let [transformation (fn [x] (+ 1 (/ 1 x)))]

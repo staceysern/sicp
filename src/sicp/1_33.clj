@@ -1,6 +1,6 @@
 (ns sicp.1-33
-  (:use sicp.prime)
-  (:use sicp.core))
+  (:require [sicp.prime :refer [prime?]]
+            [sicp.core :refer [square gcd]]))
 
 (defn filtered-accumulate [pred combiner null-value term a next b]
   (if (> a b)
@@ -24,8 +24,3 @@
 
 (defn product-of-relatively-prime [n]
   (filtered-accumulate #(relatively-prime? n %) * 1 identity 1 inc n))
-
-
-
-
-

@@ -1,6 +1,6 @@
 (ns sicp.1-40
-  (:use sicp.fixedpoint)
-  (:use sicp.core))
+  (:require [sicp.fixedpoint :refer [fixed-point]]
+            [sicp.core :refer [cube square]]))
 
 (def dx 0.00001)
 
@@ -21,8 +21,3 @@
 (defn cubic [a b c]
   (fn [x]
     (+ (cube x) (* a (square x)) (* b x) c)))
-
-
-
-
-

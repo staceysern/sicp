@@ -1,5 +1,5 @@
 (ns sicp.1-3
-  (:use sicp.core))
+  (:require [sicp.core :refer [square]]))
 
 (defn sos [x y]
   (+ (square x) (square y)))

@@ -1,5 +1,5 @@
 (ns sicp.2-33
-  (:use sicp.accumulate)
+  (:require [sicp.accumulate :refer [accumulate]])
   (:refer-clojure :exclude [map]))
 
 (defn map [p sequence]

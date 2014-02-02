@@ -1,6 +1,6 @@
 (ns sicp.2-40
-  (:use sicp.fold)
-  (:use sicp.prime))
+  (:require [sicp.fold :refer [flatmap]]
+            [sicp.prime :refer [prime?]]))
 
 (defn unique-pairs [n]
   (flatmap (fn [i]

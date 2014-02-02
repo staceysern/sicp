@@ -1,5 +1,5 @@
 (ns sicp.1-6
-  (:use sicp.core))
+  (:require [sicp.core :refer [average square]]))
 
 (defn good-enough? [guess x]
   (< (Math/abs (- (square guess) x)) 0.001))
