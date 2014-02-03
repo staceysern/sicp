@@ -5,14 +5,14 @@
             [clojure.math.numeric-tower :refer [expt]]))
 
 (facts "num-divides"
-       (num-divides (expt 2 4) 2) => 4
-       (num-divides (expt 3 7) 3) => 7
-       )
+  (num-divides (expt 2 4) 2) => 4
+  (num-divides (expt 3 7) 3) => 7
+  )
 
 (facts "car"
-       (car (cons 10 5)) => 10
-       )
+  (car (cons 10 5)) => 10
+  )
 
 (facts "cdr"
-       (cdr (cons 10 5)) => 5
-       )
+  (cdr (cons 10 5)) => 5
+  )

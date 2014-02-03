@@ -3,55 +3,54 @@
             [sicp.core :refer :all]))
 
 (facts "square"
-       (square 0) => 0
-       (square 3) => 9
-       (square 100) => 10000
-       )
+  (square 0) => 0
+  (square 3) => 9
+  (square 100) => 10000
+  )
 
 (facts "cube"
-       (cube 3) => 27
-       (cube 10) => 1000
-       (cube 0) => 0
-       )
+  (cube 3) => 27
+  (cube 10) => 1000
+  (cube 0) => 0
+  )
 
 (facts "divides?"
-       (divides? 2 10) => true
-       (divides? 3 10) => false
-       (divides? 10 10) => true
-       )
+  (divides? 2 10) => true
+  (divides? 3 10) => false
+  (divides? 10 10) => true
+  )
 
 (facts "average"
-       (average 0 10) => 5
-       (average 2 31) => 33/2
-       )
+  (average 0 10) => 5
+  (average 2 31) => 33/2
+  )
 
 (facts "halve"
-       (halve 2) => 1
-       (halve 15) => 15/2
-       )
+  (halve 2) => 1
+  (halve 15) => 15/2
+  )
 
 (facts "dubble"
-       (dubble 0) => 0
-       (dubble 25) => 50
-       )
+  (dubble 0) => 0
+  (dubble 25) => 50
+  )
 
 (facts "log-base 2"
-       (log-base 2 16) => 4.0
-       (log-base 2 128) => 7.0
-       )
+  (log-base 2 16) => 4.0
+  (log-base 2 128) => 7.0
+  )
 
 (facts "log-base 3"
-       (log-base 3 27) => 3.0
-       )
+  (log-base 3 27) => 3.0
+  )
 
 (facts "append"
-       (append '(1 2 3) '((4 5 6) 7 8 9)) => '(1 2 3 (4 5 6) 7 8 9)
-       (append () '(1 2 3)) => '(1 2 3)
-       (append '(1 2 3) ()) => '(1 2 3)
-       (append () ()) => ()
-       (append [1 2 3] [[4 5 6] 7 8 9]) => [1 2 3 [4 5 6] 7 8 9]
-       (append [] [1 2 3]) => [1 2 3]
-       (append [1 2 3] []) => [1 2 3]
-       (append [] []) => []
-       )
-
+  (append '(1 2 3) '((4 5 6) 7 8 9)) => '(1 2 3 (4 5 6) 7 8 9)
+  (append () '(1 2 3)) => '(1 2 3)
+  (append '(1 2 3) ()) => '(1 2 3)
+  (append () ()) => ()
+  (append [1 2 3] [[4 5 6] 7 8 9]) => [1 2 3 [4 5 6] 7 8 9]
+  (append [] [1 2 3]) => [1 2 3]
+  (append [1 2 3] []) => [1 2 3]
+  (append [] []) => []
+  )

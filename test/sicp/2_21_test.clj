@@ -3,14 +3,9 @@
             [sicp.2-21 :refer :all]))
 
 (facts "square-list-r"
-       (square-list-r '( 1 2 3 4)) => '(1 4 9 16)
-       )
+  (square-list-r '( 1 2 3 4)) => '(1 4 9 16)
+  )
 
 (facts "square-list-m"
-       (square-list-m '( 1 2 3 4)) => '(1 4 9 16)
-       )
-
-
-
-
-
+  (square-list-m '( 1 2 3 4)) => '(1 4 9 16)
+  )

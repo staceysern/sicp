@@ -4,11 +4,9 @@
             [sicp.2-4 :refer :all]))
 
 (facts "car"
-       (car (cons 3 4)) => 3
-       )
+  (car (cons 3 4)) => 3
+  )
 
 (facts "cdr"
-       (cdr (cons 3 4)) => 4
-       )
-
-
+  (cdr (cons 3 4)) => 4
+  )

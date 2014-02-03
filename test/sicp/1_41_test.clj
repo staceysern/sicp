@@ -3,12 +3,9 @@
             [sicp.1-41 :refer :all]))
 
 (facts "dubble"
-       ((dubble inc) 5) => 7
-       )
+  ((dubble inc) 5) => 7
+  )
 
 (facts "dubble dubble"
-       (((dubble (dubble dubble)) inc) 5) => 21
-       )
-
-
-          
+  (((dubble (dubble dubble)) inc) 5) => 21
+  )

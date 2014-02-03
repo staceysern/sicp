@@ -3,18 +3,15 @@
             [sicp.1-38 :refer :all]))
 
 (facts "e"
-       (< (Math/abs (- (e) 2.71828)) 0.00001) => true
-       )
+  (< (Math/abs (- (e) 2.71828)) 0.00001) => true
+  )
 
 (ns sicp.1-21-test
   (:require [midje.sweet :refer :all]
             [sicp.1-21 :refer :all]))
 
 (facts "smallest-divisor"
-       (smallest-divisor 199) => 199
-       (smallest-divisor 1999) => 1999
-       (smallest-divisor 19999) => 7
-       )
-
-
-
+  (smallest-divisor 199) => 199
+  (smallest-divisor 1999) => 1999
+  (smallest-divisor 19999) => 7
+  )

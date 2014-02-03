@@ -10,4 +10,4 @@
   (charmichael? 2821) => true
   (charmichael? 6601) => true
   (charmichael? 2820) => false
-)
+  )

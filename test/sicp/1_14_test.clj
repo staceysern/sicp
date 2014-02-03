@@ -3,6 +3,5 @@
             [sicp.1-14 :refer :all]))
 
 (facts "count change"
-       (cc 100 5) => 292
-       )
-
+  (cc 100 5) => 292
+  )

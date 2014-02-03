@@ -5,11 +5,6 @@
 (def us-coins '(50 25 10 5 1))
 
 (facts "cc"
-       (cc 100 us-coins) => 292
-       (cc 100 (reverse us-coins)) => 292
-       )
-
-
-
-
-
+  (cc 100 us-coins) => 292
+  (cc 100 (reverse us-coins)) => 292
+  )
