@@ -15,8 +15,7 @@
       (recur (+ c 1) (conj acc (cell row c))))))
 
 (defn triangle [rows]
-  (loop [r 1, acc []]
+  (loop [r 1 acc []]
     (if (> r rows)
       acc
       (recur (+ r 1) (conj acc (row r))))))
-
